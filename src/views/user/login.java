@@ -69,6 +69,11 @@ public class login extends javax.swing.JFrame {
         psSenha.setText("jPasswordField1");
         psSenha.setBorder(null);
         psSenha.setOpaque(false);
+        psSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                psSenhaActionPerformed(evt);
+            }
+        });
         PainelRoot.add(psSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 230, -1));
 
         txUserMail.setFont(new java.awt.Font("Leelawadee UI", 0, 14)); // NOI18N
@@ -153,6 +158,10 @@ public class login extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.txUserMail.setText("");
     }//GEN-LAST:event_txUserMailFocusGained
+
+    private void psSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_psSenhaActionPerformed
 
     /**
      * @param args the command line arguments
